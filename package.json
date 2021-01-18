@@ -1,0 +1,37 @@
+{
+    "name": "plugin-svg-sprite",
+    "version": "1.0.0",
+    "description": "SVG sprite plugin for Vite2",
+    "main": "lib/index.js",
+    "files": [
+        "lib",
+        "es",
+        "src",
+        "LICENSE"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "vite",
+        "svg"
+    ],
+    "author": "daihy<dai85939260@163.com>",
+    "homepage": "https://github.com/daihy8759/plugin-svg-sprite",
+    "bugs": {
+        "url": "https://github.com/daihy8759/plugin-svg-sprite/issues"
+    },
+    "scripts": {
+        "build": "tsc && npx tsc -m es2015 --outDir es",
+        "prepublish": "npm run build"
+    },
+    "dependencies": {
+        "svg-baker": "^1.7.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.21",
+        "typescript": "^4.1.3",
+        "vite": "^2.0.0-beta.30"
+    },
+    "peerDependencies": {
+        "vite": "2"
+    }
+}
