@@ -31,8 +31,8 @@ import appIconId from './path/to/icons/app.svg';
 // react or vue component, as you want
 export default function App() {
     return (
-        <svg>
-            <use xlinkHref={`#${appIconId}`} />
+        <svg class="svg-icon">
+            <use href="#icon-system"></use>
         </svg>
     );
 }

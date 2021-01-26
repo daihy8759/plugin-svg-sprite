@@ -6,7 +6,6 @@
     "files": [
         "lib",
         "es",
-        "src",
         "LICENSE"
     ],
     "license": "MIT",
@@ -21,7 +20,7 @@
     },
     "scripts": {
         "build": "tsc && npx tsc -m es2015 --outDir es",
-        "prepublish": "npm run build"
+        "prepare": "npm run build"
     },
     "dependencies": {
         "svg-baker": "^1.7.0"
